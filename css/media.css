@@ -1,0 +1,239 @@
+
+.mo{
+    display: none;
+}
+.station2{
+    display: none!important;
+  
+}
+
+@media (max-width:1280px){
+    html{
+      font-size: var( --font-size-tab);
+    }
+    .commonFrame.desc3{
+        gap: 1rem;
+    }
+    .commonFrame.desc3 br{
+        display: none;
+    }
+    .pc{
+        display: none;
+    }
+    .commonFrame{
+        width: auto;
+        margin: 0 1rem;
+        
+    }
+    .commonFrame.station5{
+        margin: 0 1rem;
+    }
+    .type1{
+     
+        gap: 1rem;
+       }
+    .pt100{
+        padding: 0;
+    }
+    .mo{display: block;}
+    .type1{
+        margin-top: var(--space-large);
+    }
+    .header_mo{
+        
+        position: fixed;
+        left: 0;
+        z-index: 1000;
+        top: 0;
+        width: 100%;
+        height: 4rem;
+        background-color: var(--main-color);
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .logo_mo{
+       
+        display: flex;
+        align-items: center;
+    }
+    .logo_mo img{
+        border:1px solid #000;
+        height: 4rem;
+    }
+    #btn_gnb{
+        display: flex;
+       align-items: center;
+       padding-left:1rem ;
+       color: #fff;
+       cursor: pointer;
+
+    }
+    #btn_gnb img{
+        height: 1.5rem;
+    }
+    .hidden_gnb{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        transform: translateX(100%);
+        padding: 1rem;
+        transition: all 0.6s ease 0s;
+
+      
+    }
+    .hidden_gnb.on{
+        transform: translateX(0%);
+    }
+    .hidden_gnb_top{
+        display: flex;
+        justify-content: space-between;
+      
+        height: 5rem;
+
+    }
+
+    /* .hidden_gnb_top a:before{
+        content: "";
+        width: 2rem;
+
+    }      */
+
+    #btn_close_gnb img{
+        height: 1.5rem;
+
+    }
+    #btn_close_gnb{
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        cursor: pointer;
+    }
+    .gnb_mo_wrap{
+        
+        margin: var(--space-middle) 0;
+        height: calc(100vh - 16rem);
+        overflow: auto;
+        min-height: 15rem;
+    }
+    .hidden_gnb_bottom{
+      
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sns{
+        display: flex;
+        gap:var(--space-small);
+    }
+    .sns img{
+        height: 1.5rem;
+    }
+    .sns>li{
+       padding: 5px;
+    }
+    .gnb_mo a{
+        display: flex;
+        height: 2.5rem;
+        align-items: center;
+        padding: 0 1rem;
+
+    }
+    .gnb_mo ul{
+        background-color: var(--main-color);
+        color: #fff;
+    }
+    .gnb_mo>li:after{
+        content: "";
+        position: absolute;
+        right: 1rem;
+        top: 0.75rem;
+        width: 1rem;
+        height:1rem;
+  
+        background: url("../img/up.svg")no-repeat 50%,50% / contain;
+        transform: rotate(180deg);
+        transition: all 0.3s ease 0s;
+
+
+    }
+    .gnb_mo>li:hover:after{
+        transform: rotate(0deg);
+    }
+    .gnb_mo>li:hover ul{
+        height: 12.5rem;
+    }
+    .gnb_mo ul{
+       
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease 0s;
+
+    }
+
+    .gnb_mo>li{
+        border-bottom: 1px solid var(--inactive-color);
+        position: relative;
+    }
+   
+
+
+
+
+}
+
+
+@media(max-width:768px){
+    .commonFrame.desc3{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .commonFrame.desc3 figure{
+        height: 18rem;
+        flex-grow: 0;
+        flex-basis: auto;
+    }
+    html{
+        font-size: var( --font-size-mo);
+    }
+    .type1{
+        flex-direction: column;
+    }
+    
+    .station1{display: none !important;}
+    .station2{
+        display: block !important;
+        width: 100%;
+        height: auto;
+       
+    }
+    .station2-pagination-bullet {
+        width:0.5rem;
+        height:0.5rem;
+        display: inline-block;
+        border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+        background: #fff;
+        opacity: 1;
+    }
+    .station2-pagination-bullet-active {
+       opacity: 1;
+       background: var(--main-color);
+    }
+ 
+    .type1 figure img{
+        width: 80%;
+    }
+
+}
+@media(max-width:300px){
+    .hidden_gnb_bottom{
+        flex-direction: column-reverse;
+    }
+}

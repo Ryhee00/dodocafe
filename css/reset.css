@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+/* css t스타일을 만들기 전에 무조건 스타일 초기화 -각각의 태그들에게 설정되어있는  기본스타일 제거 */
+}
+/* 폰트 크기 html기본 크기16px */
+
+h1,h2,h3,h4,h5,h6{
+    /* , 그룹 선택자 같이 선택이 된다 */
+    font-size:inherit;
+    /* inherit; 글씨크기를 부모태그에 적용된 글씨크기로 적용시키겠다.-상속시키겠다 */
+    /* 폰트 크기를 똑같이 적용됨 그래야지 점수에 밀리지 않고 변경가능 */
+    font-weight: inherit;
+    /* font-weight;nomal'폰트 굵기 얇아짐  
+    글자에 관련된  것만 inherit*/
+    line-height: 1;
+ } 
+
+/* 상속 스타일로 설정하는 이유는 영역태그에 글씨 관려  속성들을 지정했을 때 그 안에 자식태그나
+자손태그 혹은 글자들의 글씨스타일을 한번에 적용 혹은 수정하기 편하게 하기위해서임 */
+strong,b{
+    font-weight: inherit;
+    
+}
+i,em,address{
+    font-style: inherit;
+}
+
+a{
+color: inherit;
+text-decoration: inherit;
+}
+
+ul,ol{
+    list-style:none ;
+}
+img,video{
+    max-width: 100%;
+
+}
+
+input{
+    outline: 0;
+}

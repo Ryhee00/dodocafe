@@ -1,0 +1,23 @@
+:root{
+    --font-bold:600;
+    --font-medium:500;
+    --font-thin:300;
+    --main-color:#033532;
+    --font-color:#ec7303;
+    --inactive-color:#e6e6e6;
+    --font-size-pc:20px;
+    --font-size-tab:18px;
+    --font-size-mo:14px;
+    --space-small:1rem;
+    /*  --space-samll같은맥란인데 구분하는 여백 */
+    --space-middle:2rem;
+    /* space-middle:다은 맥락 구분 여백 */
+    --space-large:3.5rem;
+    /* space-large:영역공간의 위아래 여백 */
+    --space-xlarge:7rem;
+    /* space-xlarge영역간의 여백 */
+    
+
+
+
+}
