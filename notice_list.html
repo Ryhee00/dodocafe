@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+</head>
+<body>
+    <aside class="fixed_menu"></aside>
+    <div class="modal"></div>
+    <div class="popups">
+        <div class="popup_title">선택한 항목들을 삭제하시겠습니까?</div>
+        <div class="popup_ctl">
+            <span class="btn_common yes" id="btn_delete_yes">네</span>
+            <span class="btn_common no" id="btn_delete_no">아니요</span>
+        </div>
+    
+    </div>
+    <div class="header_wrap"></div>
+    <main>
+        <div class="sub_banner sub1">
+            <div class="ban_txt">
+                <h2>공지사항</h2>
+                <p>“최신 공지사항 및 이벤트 정보를 확인하시어 저희 카페의 다양한 소식을 놓치지 마세요."</p>
+            </div>
+        </div>
+        <div class="commonFrame option_bar">
+            <section>
+                전체<strong>25</strong>건 - <strong>1</strong>페이지
+            </section>
+            <section class="option_admin">
+                <a href="#" class="btn_common" id="btn_delete">선택삭제</a>
+                <a href="/notice_write.html" class="btn_common small" >글쓰기</a>
+            </section>
+        </div>
+        <form action="#" class="commonFrame notice_form">
+            <table class="list_table">
+                <thead>
+                    <tr>
+                        <th class="cell_admin">
+                            <label for="all" class="checkbox">
+                                <input type="checkbox" id="all">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </th>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>날짜</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  class="cell_admin">  
+                            <label for="n25" class="checkbox">
+                            <input type="checkbox" id="n25">
+                            <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>29</td>
+                        <td><a href="/notice_view.html">연말 특별 행사 일정공지</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-29</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin"> 
+                            <label for="n24" class="checkbox">
+                            <input type="checkbox" id="n24">
+                            <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>28</td>
+                        <td><a href="/notice_view.html">카페 재정비 공사 안내</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-28</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin">
+                            <label for="n24" class="checkbox">
+                                <input type="checkbox" id="n24">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>27</td>
+                        <td><a href="/notice_view.html">커피 클래스 모집 안내</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-27</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin">
+                            <label for="n23" class="checkbox">
+                                <input type="checkbox" id="n23">
+                                <span class="custom_checkbox"></span>
+                                </label>
+                        
+                        </td>
+                        <td>26</td>
+                        <td><a href="/notice_view.html">2024년 겨울 한정 메뉴 예고</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-26</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin">
+                            <label for="n22" class="checkbox">
+                                <input type="checkbox" id="n22">
+                                <span class="custom_checkbox"></span>
+                                </label>
+                        
+                        </td>
+                        <td>25</td>
+                        <td><a href="/notice_view.html">고객 소리함 운영 시작</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-25</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin">
+                            <label for="n21" class="checkbox">
+                                <input type="checkbox" id="n21">
+                                <span class="custom_checkbox"></span>
+                                </label>
+                        </td>
+                        <td>24</td>
+                        <td><a href="/notice_view.html">카페 내 Wi-Fi 사용안내</a> </td>
+                        <td>DODO카페</td>
+                        <td>2024-10-24</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin">
+                            <label for="n20" class="checkbox">
+                                <input type="checkbox" id="n20">
+                                <span class="custom_checkbox"></span>
+                                </label>
+                        </td>
+                        <td>23</td>
+                        <td><a href="/notice_view.html">가을 맞이 특별 할인 이벤트</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-23</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin">
+                            <label for="n19" class="checkbox">
+                                <input type="checkbox" id="n19">
+                                <span class="custom_checkbox"></span>
+                                </label>
+                        </td>
+                        <td>22</td>
+                        <td><a href="/notice_view.html">회원 가입 이벤트 진행 중</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-22</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin">
+                            <label for="n18" class="checkbox">
+                                <input type="checkbox" id="n18">
+                                <span class="custom_checkbox"></span>
+                                </label>
+                        </td>
+                        <td>21</td>
+                        <td><a href="/notice_view.html">신규 메뉴 출시!</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-21</td>
+
+                    </tr>
+                    <tr>
+                        <td  class="cell_admin">
+                            <label for="n17" class="checkbox">
+                                <input type="checkbox" id="n17">
+                                <span class="custom_checkbox"></span>
+                                </label>
+                        </td>
+                        <td>20</td>
+                        <td><a href="/notice_view.html">카페 운영시간 변경 안내</a></td>
+                        <td>DODO카페</td>
+                        <td>2024-10-20</td>
+
+                    </tr>
+                </tbody>
+                
+            </table>
+        </form>
+        <div class="commonFrame bbs_pagenation">
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+        </div>
+
+    </main>
+    <footer></footer>
+    <script>
+        let btn_delete = document.querySelector("#btn_delete")
+        let modal = document.querySelector(".modal")
+        let popups = document.querySelector(".popups")
+        let btn_delete_yes = document.querySelector("#btn_delete_yes")
+        let btn_delete_no = document.querySelector("#btn_delete_no")
+
+// 팝업내용 나오게
+        btn_delete.addEventListener("click",function(event){
+            event.preventDefault()
+            modal.classList.add("on")
+            popups.classList.add("on")
+           
+        })
+
+        btn_delete_yes.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+
+        btn_delete_no.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+    </script>
+    <script src="./js/include.js"></script>    
+
+  
+    
+</body>
+</html>

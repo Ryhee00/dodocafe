@@ -8,9 +8,61 @@
 }
 
 @media (max-width:1280px){
+    .commonFrame.lmb{
+        margin-bottom: var(--space-large);
+    }
+    .commonFrame.smb{
+        margin-bottom: var(--space-small);
+    }
+    .commonFrame.large_margin{
+        margin: var(--space-large) 1rem;
+    }
+    .commonFrame.form_submit{
+        margin-bottom: var(--space-xlarge);
+    }
+    .copy{
+        text-align: center;
+    }
+    .info {
+        margin-bottom: var(--space-middle);
+        display: flex;
+        gap: 0 var(--space-small);
+        flex-wrap: wrap;
+        justify-content: center;
+        opacity: 0.8;
+    }
+    .foot_menu {
+        margin-bottom: var(--space-middle);
+        display: flex;
+        gap: var(--space-small);
+        justify-content: center;
+    }
+    footer .commonFrame {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+    .commonFrame.bbs_pagenation{
+     margin-bottom: var(--space-xlarge);
+     }
+     
+    .commonFrame.notice_form {
+        margin-bottom: var(--space-small);
+    }
+
+    .commonFrame.option_bar{
+        margin: var(--space-middle) 1rem;
+    }
     html{
       font-size: var( --font-size-tab);
     }
+    .station6 figure{
+        width:100% ;
+        height: 20rem;
+        border-radius: 20px;
+      } 
     .commonFrame.desc3{
         gap: 1rem;
     }
@@ -26,8 +78,13 @@
         
     }
     .commonFrame.station5{
+        padding-bottom: var(--space-large);
         margin: 0 1rem;
     }
+    .commonFrame.station6{
+        padding-bottom: var(--space-large);
+        margin: 0 1rem;
+         }
     .type1{
      
         gap: 1rem;
@@ -46,7 +103,7 @@
         z-index: 1000;
         top: 0;
         width: 100%;
-        height: 4rem;
+        height: 5rem;
         background-color: var(--main-color);
         padding: 0 1rem;
         display: flex;
@@ -60,7 +117,7 @@
         align-items: center;
     }
     .logo_mo img{
-        border:1px solid #000;
+      
         height: 4rem;
     }
     #btn_gnb{
@@ -84,7 +141,7 @@
         background-color: #fff;
         transform: translateX(100%);
         padding: 1rem;
-        transition: all 0.6s ease 0s;
+        /* transition: all 0.6s ease 0s; */
 
       
     }
@@ -191,6 +248,41 @@
 
 
 @media(max-width:768px){
+    .list_table tr th:nth-of-type(2){
+        display: none;
+    }
+    .list_table tr th:nth-of-type(4){
+        display: none;
+    }
+    .list_table tr td:nth-of-type(2){
+        display: none;
+    }
+    .list_table tr td:nth-of-type(4){
+        display: none;
+    }
+    .list_table th:last-of-type{
+        width: 30%;
+     }
+     /* .list_table th:nth-of-type(4){
+        width: 15%;
+     } */
+     .list_table th:nth-of-type(3){
+        width: 64%;
+     }
+     .list_table th:nth-of-type(2){
+        width: 7%;
+     }
+     .list_table th:nth-of-type(1){
+        width: 8%;
+     }
+    .commonFrame.desc1 {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .commonFrame.desc2 {
+        gap: 1rem;
+        flex-direction: column;
+    }
     .commonFrame.desc3{
         flex-direction: column;
         gap: 1rem;
@@ -199,6 +291,14 @@
         height: 18rem;
         flex-grow: 0;
         flex-basis: auto;
+    }
+    .commonFrame.fade {
+        display: flex;
+        margin-top: var(--space-large);
+        margin-bottom: var(--space-large);
+        align-items: flex-end;
+        gap: 1rem;
+        flex-direction: column;
     }
     html{
         font-size: var( --font-size-mo);
@@ -236,4 +336,23 @@
     .hidden_gnb_bottom{
         flex-direction: column-reverse;
     }
+    .commonFrame.option_bar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .list_table th:last-of-type{
+        display: none;
+     }
+     /* .list_table th:nth-of-type(4){
+        width: 15%;
+     } */
+     .list_table th:nth-of-type(3){
+        width: 64%;
+     }
+     /* .list_table th:nth-of-type(2){
+        width: 7%;
+     } */
+     .list_table th:nth-of-type(1){
+        width: 10%;
+     }
 }
